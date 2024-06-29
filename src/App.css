@@ -3,6 +3,7 @@ body {
     font-family: "Prompt", sans-serif;
 }
 
+
 /* Navbar Section */
 .menuNavbar {
     @apply text-gray-800 hover:text-gray-600;

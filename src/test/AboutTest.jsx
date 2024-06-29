@@ -7,9 +7,6 @@ import Placeholder_1 from '../assets/images/placeholder1.png'
 import Segment from '../assets/images/segment.png'
 import TestImage from '../assets/images/mock/testImage.jpg'
 
-// logos
-// import { logos } from '../data/logoDB'
-
 const AboutTest = () => {
     return (
         <section className="max-w-8xl mx-auto pt-28">
@@ -46,15 +43,6 @@ const AboutTest = () => {
                                     ลูกค้าของเรา
                                 </h2>
                             </div>
-                            {/* <div className="grid grid-cols-2 gap-16 text-center lg:grid-cols-6">
-                                {logos.map((logo, index) => {
-                                    return (
-                                        <div className="items-center justify-center lg:inline-block" key={index}>
-                                            <img src={logo.src} alt={logo.alt} className="block h-24 object-contain" />
-                                        </div>
-                                    )
-                                })}
-                            </div> */}
                         </div>
                     </div>
                     <div className="text-black">
@@ -119,47 +107,7 @@ const AboutTest = () => {
                             <img src={PlaceholderMain} alt="img" />
                         </div>
                     </div>
-                
-                    <div className="mt-32">
-                        <div className="mx-auto flex flex-col px-5 py-24 text-left lg:flex-row">
-                            <div className="hidden lg:inline-block lg:w-full lg:max-w-xl">
-                                <img src={PlaceholderMain} alt="img" />
-                            </div>
-                            <div className="flex flex-col pt-0 text-left lg:w-1/2 lg:flex-grow lg:items-start md:pl-16 lg:pl-24 lg:pt-24">
-                                <h2 className="mb-4 text-2xl font-bold leading-none sm:text-4xl">
-                                    Eu diam in magna blandit sit magna dolor proin velit.
-                                </h2>
-                                <p className="mb-8 font-semibold leading-relaxed text-black">
-                                    Lorem ipsum ac neque, consectetur adipiscing elit. Nibh neque,
-                                    ut purus donec sed donec semper ac vestibulum. Mi urna,
-                                    facilisis arcu, auctor elit. Ut nunc non aenean netus ut.
-                                </p>
-                            </div>
-                            <div className="inline-block lg:hidden lg:w-full lg:max-w-xl">
-                                <img src={PlaceholderMain} alt="img" />
-                            </div>
-                        </div>
-                    </div>
 
-                    <div className="my-24 p-4 text-black">
-                        <div className="max-w-9xl mx-auto flex flex-col items-center bg-gradient-to-r from-blue-200 to-blue-100 px-5 py-24 lg:flex-row">
-                            <div className="flex flex-col items-center pb-16 pl-0 text-center lg:mb-0 lg:w-1/2 lg:flex-grow lg:items-start lg:pl-12 lg:pr-24 lg:text-left">
-                                <h2 className="pb-4 text-2xl font-bold leading-tight lg:text-4xl">
-                                    Lorem ipsum mi at amet, consecteturadipiscing elit. Mattis.
-                                </h2>
-                                <p className="text-md mb-8 lg:text-xl">
-                                    Lorem ipsum praesent amet, consectetur adipiscing elit. Cursus
-                                    ullamcorper id tristique tincidunt. Tincidunt feugiat at mi
-                                    feugiat hendrerit. Ac faucibus accumsan, quis lacus, lectus
-                                    eget bibendum. At praesent quisque sollicitudin fusce.
-                                </p>
-                            </div>
-                            <div className="w-4/7 pr-12 lg:w-2/5">
-                                <img src={PlaceholderMain} className="hidden object-cover object-center lg:inline-block" alt="image" />
-                                <img src={PlaceholderMain} className="inline-block object-cover object-center lg:hidden" alt="image" />
-                            </div>
-                        </div>
-                    </div>
                     <div className="mx-auto">
                         <div className="max-w-8xl mx-auto px-5 py-24 lg:px-24">
                             <div className="my-6 flex w-full flex-col text-left lg:text-center">
@@ -175,28 +123,6 @@ const AboutTest = () => {
                             <img src={PlaceholderMain} alt="img" />
                         </div>
                     </div>
-                    {/* <div className="text-black">
-                        <div className="max-w-8xl mx-auto flex flex-col px-5 py-48 text-black lg:flex-row">
-                            <div className="lg:mb-0 lg:w-full lg:max-w-xl">
-                                <img className="rounded object-cover object-center" alt="image" src={Placeholder_1} />
-                            </div>
-                            <div className="items-left flex flex-col pt-16 text-left lg:w-1/2 lg:flex-grow lg:items-start md:pl-32 lg:pl-48 lg:text-left">
-                                <h2 className="mb-2 text-lg leading-tight text-gray-700 sm:text-lg">
-                                    Viverra enim diam gravida risus nisl.
-                                </h2>
-                                <h2 className="mb-6 text-lg font-bold sm:text-lg">
-                                    Lectus eu.
-                                </h2>
-                                <h2 className="mb-4 text-3xl font-bold sm:text-3xl">
-                                    Lorem ipsum accumsan arcu, consectetur adipiscing elit. Sed
-                                    eget enim vel.
-                                </h2>
-                                <a href="/" className="underline-blue mt-12 text-lg font-bold leading-relaxed">
-                                    Ut convallis massa.
-                                </a>
-                            </div>
-                        </div>
-                    </div> */}
                 </div>
             </div>
         </section>

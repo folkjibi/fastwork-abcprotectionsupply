@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {
@@ -33,8 +34,9 @@ module.exports = {
   plugins: [
     require("@tailwindcss/aspect-ratio"),
     require('daisyui'),
+    require('flowbite/plugin')
   ],
   daisyui: {
-    primary: "#213065"
+    primary: "#213065",
   }
 };
