@@ -3,10 +3,11 @@ import { customLeft, customRight } from '../data/logoDB'
 
 const LogoSlide = () => {
     return (
-        <div>
+        <div className="my-10">
             <div className="overflow-hidden">
                 <div className="whitespace-nowrap">
                     <div className="inline-block animate-marqueeRight">
+                        
                         {/* loop ข้อมูลออกมา เพื่อแสดงหน้าเว็บไซต์ */}
                         {customLeft.map((logoRight, logo) => (
                             <div className="inline-block animate-marquee" key={logo}>

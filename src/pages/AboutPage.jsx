@@ -1,40 +1,25 @@
 import React from 'react'
-
-// Logo ต่างๆ ของลูกค้าเรา
-// import { logos } from '../data/logoDB'
+import Customer from '../components/LogoSlide'
 
 const AboutPage = () => {
     
     return (
-        <section className="bg-gray-100 flex flex-col items-center pt-28">
-            {/* content company */}
-            <div>
-                <h2 className="text-3xl font-bold mt-5">เกี่ยวกับเรา</h2>
-
-                <div>
-                    <div>
-                        <h3></h3>
-                        <img src="" alt="" />
-                        <p></p>
-                    </div>
+        <section className="text-gray-600">
+            <div className="container px-5 py-24 mx-auto">
+                <div className="flex flex-col text-center w-full my-10">
+                    <h2 className="text-md text-primary tracking-widest font-bold title-font mb-1">เกี่ยวกับเรา</h2>
+                    <h1 className="text-2xl sm:text-3xl font-bold title-font mb-4 text-gray-900">เอ.บี.ซี. โปรเท็คชั่น ซัพพลาย</h1>
+                    <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+                        เป็นผู้นำเข้าและจัดจำหน่ายอุปกรณ์ความปลอดภัย ถังดับเพลิง สายดับเพลิง อุปกรณ์ดับเพลิง อุปกรณ์จราจร ไฟฉุกเฉิน ทั้งภายนอก และภายในอาคาร และให้บริการมากกว่า 30 ปี เป็นสินค้าที่ผลิตภายในประเทศ และต่างประเทศ ซึ่งได้รับมาตรฐานอุตสาหกรรม มอก.322-2537 และสินค้านำเข้ามาตรฐานสากลต่างๆ ไม่ว่าจะเป็น CE, UL, FM, APPROVED, DIN NFPA, EN และอื่นๆ และให้ได้เลือกสรร อีกทั้งยังเป็นผู้ให้บริการตรวจเช็คสภาพอุปกรณ์ดับเพลิงที่มีอายุการใช้งานนานแล้ว แต่ขาดการตรวจสภาพ รับให้คำปรึกษาด้านการติดตั้งอุปกรณ์ ความปลอดภัยต่างๆ ทั้งนี้เรายังมีทีมงานที่มีความชำนาญด้านความปลอดภัย สามารถอบรมให้ความรู้ความเข้าใจเกี่ยวกับใช้งานอุปกรณ์อย่างถูกต้อง และปฎิบัติงานอย่างมืออาชีพ เอ.บี.ซี. โปรเท็คชั่น ซัพพลาย จะมุ่งมั่นพัฒนาการให้บริการและปรับปรุงมาตรฐานต่างๆยิ่งๆขึ้นไปเพื่อรองรับความต้องการของลูกค้าทุกท่าน และก้าวสู่ความเป็นผู้นำ ด้านความปลอดภัยต่อไป
+                    </p>
                 </div>
             </div>
-            
-            {/* Logo ลูกค้าของเรา */}
-            <div className="py-24 sm:py-32">
-                <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <h2 className="text-center text-3xl font-semibold leading-8 text-gray-900">
-                        ลูกค้าของเรา
-                    </h2>
 
-                    {/* {logos.map((logos, index) => {
-                        return (
-                            <div className="mx-auto mt-20 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-3 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5" key={index}>
-                                <img className="col-span-1 max-h-12 w-full object-contain" src={logos.src} alt={logos.alt} width={logos.width} height={logos.height} />
-                            </div>
-                        )
-                    })} */}
-                </div>
+            <div>content</div>
+
+            <div className="">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl text-center font-bold">ลูกค้าของเรา</h2>
+                <Customer />
             </div>
         </section>
     )

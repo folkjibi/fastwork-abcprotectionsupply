@@ -13,8 +13,8 @@ module.exports = {
         background: "#F5F7FA",
       },
       animation: {
-        marqueeLeft: 'marqueeLeft 15s linear infinite',
-        marqueeRight: 'marqueeRight 15s linear infinite',
+        marqueeLeft: 'marqueeLeft 30s linear infinite',
+        marqueeRight: 'marqueeRight 30s linear infinite',
       },
       keyframes: {
         marqueeLeft: {

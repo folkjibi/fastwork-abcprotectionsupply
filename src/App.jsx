@@ -12,9 +12,6 @@ import AboutPage from "./pages/AboutPage";
 import ProductsPage from "./pages/ProductsPage";
 import ContactPage from "./pages/ContactPage";
 
-// test system
-import AboutTest from "./test/AboutTest";
-
 function App() {
   return (
     <>
@@ -23,7 +20,7 @@ function App() {
           <Routes>
             {/* หน้าเพจหลักทั้งหมด 4 หน้า */}
             <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutTest />} />
+            <Route path="/about" element={<AboutPage />} />
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/contact" element={<ContactPage />} />
 

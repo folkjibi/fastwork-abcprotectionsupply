@@ -114,7 +114,7 @@ const ContactPage = () => {
                                 <textarea name="message" id="message" rows="4" cols="50" value={formData.message} onChange={handleChange} className="inputContact"></textarea>
                             </div>
 
-                            <button type="submit" className="w-full p-2 bg-black hover:bg-red-500 text-white rounded mt-4">
+                            <button type="submit" className="w-full p-2 bg-primary hover:bg-primary/80 text-white rounded mt-4">
                                 ขอใบเสนอราคา
                             </button>
                         </form>
