@@ -3,7 +3,7 @@ import Banner from '../components/Banner'
 import ProductsHight from '../components/ProductsHight'
 
 // icons
-import { FaFacebook, FaLine, FaYoutube } from 'react-icons/fa'
+import { FaFacebook, FaLine } from 'react-icons/fa'
 
 // Image
 import BannerBT1 from '../assets/images/banners/40Year.jpg'
