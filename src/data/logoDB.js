@@ -45,187 +45,187 @@ export const customLeft = [
     {
         src: logo1,
         alt: "Logo1",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo2,
         alt: "banchangLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo3,
         alt: "bangkokbankLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo4,
         alt: "cobinetandroyalLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo5,
         alt: "councilLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo6,
         alt: "densoLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo7,
         alt: "educationcouncilLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo8,
         alt: "fakeLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo9,
         alt: "gateauxhouseLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo10,
         alt: "grandhomeLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo11,
         alt: "groundwaterLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo12,
         alt: "kasikornbankLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo13,
         alt: "krungthaibankLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo14,
         alt: "ministerofdefenceLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo15,
         alt: "ministryoffinanceLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo16,
         alt: "mitrprachaLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     // {
     //     src: logo17,
     //     alt: "molLogo",
-    //     width: "110",
+    //     width: "90",
     //     height: "48"
     // },
     // {
     //     src: logo18,
     //     alt: "nipponLogo",
-    //     width: "110",
+    //     width: "90",
     //     height: "48"
     // },
     // {
     //     src: logo19,
     //     alt: "pioneersLogo",
-    //     width: "110",
+    //     width: "90",
     //     height: "48"
     // },
     // {
     //     src: logo20,
     //     alt: "probationLogo",
-    //     width: "110",
+    //     width: "90",
     //     height: "48"
     // },
     // {
     //     src: logo21,
     //     alt: "Logo21",
-    //     width: "110",
+    //     width: "90",
     //     height: "48"
     // },
     // {
     //     src: logo22,
     //     alt: "singhabeerLogo",
-    //     width: "110",
+    //     width: "90",
     //     height: "48"
     // },
     // {
     //     src: logo23,
     //     alt: "spkLogo",
-    //     width: "110",
+    //     width: "90",
     //     height: "48"
     // },
     // {
     //     src: logo24,
     //     alt: "ssoLogo",
-    //     width: "110",
+    //     width: "90",
     //     height: "48"
     // },
     // {
     //     src: logo25,
     //     alt: "sugarLogo",
-    //     width: "110",
+    //     width: "90",
     //     height: "48"
     // },
     // {
     //     src: logo26,
     //     alt: "thailandpostLogo",
-    //     width: "110",
+    //     width: "90",
     //     height: "48"
     // },
     // {
     //     src: logo27,
     //     alt: "thaiwahLogo",
-    //     width: "110",
+    //     width: "90",
     //     height: "48"
     // },
     // {
     //     src: logo28,
     //     alt: "tourismandsportsLogo",
-    //     width: "110",
+    //     width: "90",
     //     height: "48"
     // },
     // {
     //     src: logo29,
     //     alt: "toyotaLogo",
-    //     width: "110",
+    //     width: "90",
     //     height: "48"
     // },
     // {
     //     src: logo30,
     //     alt: "trueLogo",
-    //     width: "110",
+    //     width: "90",
     //     height: "48"
     // },
     // {
     //     src: logo31,
     //     alt: "welfareLogo",
-    //     width: "110",
+    //     width: "90",
     //     height: "48"
     // },
 ]
@@ -235,91 +235,91 @@ export const customRight = [
     {
         src: logo17,
         alt: "molLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo18,
         alt: "nipponLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo19,
         alt: "pioneersLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo20,
         alt: "probationLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo21,
         alt: "Logo21",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo22,
         alt: "singhabeerLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo23,
         alt: "spkLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo24,
         alt: "ssoLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo25,
         alt: "sugarLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo26,
         alt: "thailandpostLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo27,
         alt: "thaiwahLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo28,
         alt: "tourismandsportsLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo29,
         alt: "toyotaLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo30,
         alt: "trueLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
     {
         src: logo31,
         alt: "welfareLogo",
-        width: "110",
+        width: "90",
         height: "48"
     },
 ]

@@ -1,15 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import IMG from '../assets/images/mock/รูปสินค้า-640x960-px-ทดลองpopup.jpg'
+
 const ProductsHight = () => {
-    // data products
     const products = [
         {
             id: 1,
             name: 'Earthen Bottle',
             to: "/products",
             price: '$48',
-            imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg',
+            imageSrc: IMG,
             imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
         },
         {

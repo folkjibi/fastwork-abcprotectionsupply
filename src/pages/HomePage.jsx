@@ -6,8 +6,8 @@ import ProductsHight from '../components/ProductsHight'
 import { FaFacebook, FaLine } from 'react-icons/fa'
 
 // Image
-import BannerBT1 from '../assets/images/banners/40Year.jpg'
-import BannerBT2 from '../assets/images/banners/FLEXI.jpg'
+import Home1 from '../assets/images/home/BannerHome-1.jpg'
+import Home2 from '../assets/images/home/BannerHome-2.jpg'
 
 const HomePage = () => {
 
@@ -30,13 +30,13 @@ const HomePage = () => {
                     <div className="flex flex-wrap -mx-4 mb-10 text-center">
                         <div className="sm:w-1/2 mb-10 px-4">
                             <div className="rounded-lg w-full h-full overflow-hidden">
-                                <img src={BannerBT1} alt="content" className="object-cover object-center w-full h-full" />
+                                <img src={Home1} alt="content" className="object-cover object-center w-full h-full" />
                             </div>
                         </div>
 
                         <div className="sm:w-1/2 mb-10 px-4">
                             <div className="rounded-lg w-full h-full overflow-hidden">
-                                <img src={BannerBT2} alt="content" className="object-cover object-center h-full w-full" />
+                                <img src={Home2} alt="content" className="object-cover object-center h-full w-full" />
                             </div>
                         </div>
                     </div>

@@ -2,11 +2,11 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// compomnent ต่างๆ
+// compomnent
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-// หน้า pages ต่างๆ
+// page
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ProductsPage from "./pages/ProductsPage";
@@ -18,15 +18,10 @@ function App() {
       <BrowserRouter>
         <Navbar />
           <Routes>
-            {/* หน้าเพจหลักทั้งหมด 4 หน้า */}
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/products" element={<ProductsPage />} />
             <Route path="/contact" element={<ContactPage />} />
-
-            {/* test pages */}
-
-            {/* หน้าเพจรองทั้งหมด หน้า */}
           </Routes>
         <Footer />
       </BrowserRouter>
