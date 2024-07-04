@@ -1,6 +1,9 @@
 import React from 'react'
 import Customer from '../components/LogoSlide'
 
+// images
+import BannerAbout from '../assets/images/about/Bannerabout.jpg'
+
 const AboutPage = () => {
     
     return (
@@ -15,7 +18,11 @@ const AboutPage = () => {
                 </div>
             </div>
 
-            <div>content</div>
+            <div className="text-gray-600 body-font">
+                <div className="container mx-auto flex px-5 pb-24 items-center justify-center flex-col">
+                    <img src={BannerAbout} alt="Image" className="w-full object-cover object-center rounded" />
+                </div>
+            </div>
 
             <div className="">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl text-center font-bold">ลูกค้าของเรา</h2>

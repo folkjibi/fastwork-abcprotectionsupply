@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner from '../components/Banner'
+import Banner from '../components/banner/Banner'
 import ProductsHight from '../components/ProductsHight'
 
 // icons
@@ -8,6 +8,7 @@ import { FaFacebook, FaLine } from 'react-icons/fa'
 // Image
 import Home1 from '../assets/images/home/BannerHome-1.jpg'
 import Home2 from '../assets/images/home/BannerHome-2.jpg'
+import BannerLine from '../assets/images/banners/Bannerline.jpg'
 
 const HomePage = () => {
 
@@ -24,9 +25,16 @@ const HomePage = () => {
                 <ProductsHight />
             </div>
 
+            {/* top banner dup section */}
+            <div className="text-gray-600 body-font">
+                <div className="container mx-auto flex px-5 py-12 items-center justify-center flex-col">
+                    <img src={BannerLine} alt="Image" className="w-full object-cover object-center rounded" />
+                </div>
+            </div>
+
             {/* banner duo section */}
             <div className="text-gray-600 body-font">
-                <div className="container px-5 pt-10 mx-auto">
+                <div className="container px-5 mx-auto">
                     <div className="flex flex-wrap -mx-4 mb-10 text-center">
                         <div className="sm:w-1/2 mb-10 px-4">
                             <div className="rounded-lg w-full h-full overflow-hidden">
