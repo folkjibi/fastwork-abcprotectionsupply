@@ -1,44 +1,48 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import IMG from '../assets/images/mock/รูปสินค้า-640x960-px-ทดลองpopup.jpg'
+
+import IMG1 from '../assets/images/home/A0149467.jpg'
+import IMG2 from '../assets/images/home/A0148264.jpg'
+import IMG3 from '../assets/images/home/A0149476.jpg'
+import IMG4 from '../assets/images/home/A0158296.jpg'
+
+const products = [
+    {
+        id: 1,
+        name: 'ไฟฉุกเฉิน LED 12V 9W',
+        to: "/products",
+        price: '$48',
+        imageSrc: IMG1,
+        imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+    },
+    {
+        id: 2,
+        name: 'สเปร์ยดับเพลิง 500 มล.',
+        to: "/products",
+        price: '$35',
+        imageSrc: IMG2,
+        imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+    },
+    {
+        id: 3,
+        name: 'ถังดับเพลิงแบบเคมีแห้งชนิดเติมได้ 10 ปอนด์',
+        to: "/products",
+        price: '$89',
+        imageSrc: IMG3,
+        imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+    },
+    {
+        id: 4,
+        name: 'เครื่องดับเพลิง ชนิดเคมีแห้ง Rating 4A5B ขนาด 10 ปอนด์',
+        to: "/products",
+        price: '$35',
+        imageSrc: IMG4,
+        imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+    },
+]
 
 const ProductsHight = () => {
-    const products = [
-        {
-            id: 1,
-            name: 'Earthen Bottle',
-            to: "/products",
-            price: '$48',
-            imageSrc: IMG,
-            imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-        },
-        {
-            id: 2,
-            name: 'Nomad Tumbler',
-            to: "/products",
-            price: '$35',
-            imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg',
-            imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-        },
-        {
-            id: 3,
-            name: 'Focus Paper Refill',
-            to: "/products",
-            price: '$89',
-            imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg',
-            imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
-        },
-        {
-            id: 4,
-            name: 'Machined Mechanical Pencil',
-            to: "/products",
-            price: '$35',
-            imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg',
-            imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-        },
-    ]
-
     return (
         <div className="bg-white">
             <div className="mx-auto max-w-2xl px-4 py-10 sm:px-6 sm:py-16 lg:max-w-7xl lg:px-8">

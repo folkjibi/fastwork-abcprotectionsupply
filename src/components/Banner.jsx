@@ -1,9 +1,9 @@
 import React from 'react';
 
 // image
-import BannerMain from '../../assets/images/banners/BannerHome-1.jpg'
-import BannerSec from '../../assets/images/banners/BannerHome-2.jpg'
-import BannerThi from '../../assets/images/banners/BannerHome-3.jpg'
+import BannerMain from '../assets/images/banners/BannerHome-1.jpg'
+import BannerSec from '../assets/images/banners/BannerHome-2.jpg'
+import BannerThi from '../assets/images/banners/BannerHome-3.jpg'
 
 const Banner = () => {
     const bannerSection = [

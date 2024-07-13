@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner from '../components/banner/Banner'
+import Banner from '../components/Banner'
 import ProductsHight from '../components/ProductsHight'
 
 // icons
