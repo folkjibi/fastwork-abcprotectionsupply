@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 // react icons
@@ -134,18 +135,18 @@ const ContactPage = () => {
                             <h3 className="text-xl font-bold mb-2">ช่องทางโซเซียลมีเดีย</h3>
                             
                             <div className="flex space-x-4">
-                                <a href="https://www.facebook.com/profile.php?id=100090972997816" target="_blank" className="text-blue-500 hover:text-blue-300">
+                                <Link to="https://www.facebook.com/profile.php?id=100090972997816" target="_blank" className="text-blue-500 hover:text-blue-300">
                                     <FaFacebookF size={30} />
-                                </a>
-                                <a href="https://line.me/R/ti/p/@424zlrnf?ts=05311443&oat_content=url" target="_blank" className="text-green-500 hover:text-green-300">
+                                </Link>
+                                <Link to="https://line.me/R/ti/p/@424zlrnf?ts=05311443&oat_content=url" target="_blank" className="text-green-500 hover:text-green-300">
                                     <FaLine size={30} />
-                                </a>
-                                <a href="mailto:abc765protectionsupply@gmail.com" className="text-black hover:text-gray-500">
+                                </Link>
+                                <Link to="mailto:abc765protectionsupply@gmail.com" className="text-black hover:text-gray-500">
                                     <IoIosMail size={30} />
-                                </a>
-                                <a href="tel:083-986-8558" className="text-black hover:text-gray-500">
+                                </Link>
+                                <Link to="tel:083-986-8558" className="text-black hover:text-gray-500">
                                     <FaPhoneAlt size={30} />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

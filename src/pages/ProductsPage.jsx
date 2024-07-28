@@ -1,34 +1,26 @@
 import React, { useState } from 'react'
-import { Dialog, DialogBackdrop, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel, } from '@headlessui/react'
-import { XMarkIcon } from '@heroicons/react/24/outline'
-import { FunnelIcon, MinusIcon, PlusIcon } from '@heroicons/react/20/solid'
 import { Link } from 'react-router-dom'
 
+// react icons
+import { Dialog, DialogBackdrop, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
+import { XMarkIcon } from '@heroicons/react/24/outline'
+import { FunnelIcon, MinusIcon, PlusIcon } from '@heroicons/react/20/solid'
+
+// images
 import IMG1 from '../assets/images/home/A0149467.jpg'
 import IMG2 from '../assets/images/home/A0148264.jpg'
 import IMG3 from '../assets/images/home/A0149476.jpg'
 import IMG4 from '../assets/images/home/A0158296.jpg'
 
 const subCategories = [
-    { name: 'Totes', href: '#' },
-    { name: 'Backpacks', href: '#' },
-    { name: 'Travel Bags', href: '#' },
-    { name: 'Hip Bags', href: '#' },
-    { name: 'Laptop Sleeves', href: '#' },
+    { name: 'ถังดับเพลิง', href: '#' },
+    { name: 'ไฟฉุกเฉิน', href: '#' },
+    { name: 'ป้ายไฟฉุกเฉิน', href: '#' },
+    { name: 'อุปกรณ์จราจร', href: '#' },
+    { name: 'accessory', href: '#' },
 ]
 
 const filters = [
-    {
-        id: 'category',
-        name: 'Category',
-        options: [
-            { value: 'new-arrivals', label: 'New Arrivals', checked: false },
-            { value: 'sale', label: 'Sale', checked: false },
-            { value: 'travel', label: 'Travel', checked: true },
-            { value: 'organization', label: 'Organization', checked: false },
-            { value: 'accessories', label: 'Accessories', checked: false },
-        ],
-    },
     {
         id: 'size',
         name: 'Size',
@@ -47,6 +39,8 @@ const products = [
     {
         id: 1,
         name: 'ไฟฉุกเฉิน LED 12V 9W',
+        category: 'ไฟฉุกเฉิน',
+        size: '12l',
         to: "/products",
         price: '$48',
         imageSrc: IMG1,
@@ -55,22 +49,28 @@ const products = [
     {
         id: 2,
         name: 'สเปร์ยดับเพลิง 500 มล.',
+        category: 'accessory',
+        size: '6l',
         to: "/products",
         price: '$35',
-        imageSrc: IMG2,
+        imageSrc: IMG3,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
     },
     {
         id: 3,
         name: 'ถังดับเพลิงแบบเคมีแห้งชนิดเติมได้ 10 ปอนด์',
+        category: 'ถังดับเพลิง',
+        size: '20l',
         to: "/products",
         price: '$89',
-        imageSrc: IMG3,
+        imageSrc: IMG2,
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
     },
     {
         id: 4,
         name: 'เครื่องดับเพลิง ชนิดเคมีแห้ง Rating 4A5B ขนาด 10 ปอนด์',
+        category: 'ถังดับเพลิง',
+        size: '40l',
         to: "/products",
         price: '$35',
         imageSrc: IMG4,
@@ -84,6 +84,28 @@ function classNames(...classes) {
 
 const ProductsPage = () => {
     const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
+    const [selectedSubCategory, setSelectedSubCategory] = useState(null)
+    const [selectedSizes, setSelectedSizes] = useState(new Set())
+
+    const handleSubCategoryChange = (category) => {
+        setSelectedSubCategory(category === selectedSubCategory ? null : category)
+    }
+
+    const handleSizeChange = (size) => {
+        const newSizes = new Set(selectedSizes)
+        if (newSizes.has(size)) {
+            newSizes.delete(size)
+        } else {
+            newSizes.add(size)
+        }
+        setSelectedSizes(newSizes)
+    }
+
+    const filteredProducts = products.filter(product => {
+        const categoryMatch = selectedSubCategory ? product.category === selectedSubCategory : true
+        const sizeMatch = selectedSizes.size > 0 ? selectedSizes.has(product.size) : true
+        return categoryMatch && sizeMatch
+    })
 
     return (
         <section className="pt-12">
@@ -106,9 +128,9 @@ const ProductsPage = () => {
                                 <ul role="list" className="px-2 py-3 font-medium text-gray-900">
                                     {subCategories.map((category) => (
                                         <li key={category.name}>
-                                            <a href={category.href} className="block px-2 py-3">
+                                            <button type="button" className="block px-2 py-3" onClick={() => handleSubCategoryChange(category.name)}>
                                                 {category.name}
-                                            </a>
+                                            </button>
                                         </li>
                                     ))}
                                 </ul>
@@ -130,10 +152,11 @@ const ProductsPage = () => {
                                                     <div key={option.value} className="flex items-center">
                                                         <input
                                                             defaultValue={option.value}
-                                                            defaultChecked={option.checked}
+                                                            defaultChecked={selectedSizes.has(option.value)}
                                                             id={`filter-mobile-${section.id}-${optionIdx}`}
                                                             type="checkbox"
                                                             className="w-4 h-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                                                            onChange={() => handleSizeChange(option.value)}
                                                         />
                                                         <label htmlFor={`filter-mobile-${section.id}-${optionIdx}`} className="ml-3 min-w-0 flex-1 text-gray-500">
                                                             {option.label}
@@ -175,7 +198,7 @@ const ProductsPage = () => {
                                 <ul role="list" className="space-y-4 border-b border-gray-200 pb-6 text-sm font-medium text-gray-900">
                                     {subCategories.map((category) => (
                                         <li key={category.name}>
-                                            <a href={category.href}>{category.name}</a>
+                                            <button type="button" onClick={() => handleSubCategoryChange(category.name)}>{category.name}</button>
                                         </li>
                                     ))}
                                 </ul>
@@ -197,11 +220,12 @@ const ProductsPage = () => {
                                                     <div key={option.value} className="flex items-center">
                                                         <input
                                                             defaultValue={option.value}
-                                                            defaultChecked={option.checked}
+                                                            defaultChecked={selectedSizes.has(option.value)}
                                                             id={`filter-${section.id}-${optionIdx}`}
                                                             name={`${section.id}[]`}
                                                             type="checkbox"
                                                             className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                                                            onChange={() => handleSizeChange(option.value)}
                                                         />
                                                         <label htmlFor={`filter-${section.id}-${optionIdx}`} className="ml-3 text-sm text-gray-600">
                                                             {option.label}
@@ -218,7 +242,7 @@ const ProductsPage = () => {
                             <div className="lg:col-span-3">
                                 {/* Your content */}
                                 <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-                                    {products.map((product) => (
+                                    {filteredProducts.map((product) => (
                                         <Link to={product.to} className="group" key={product.id}>
                                             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                                                 <img src={product.imageSrc} alt={product.imageAlt} className="h-full w-full object-cover object-center group-hover:opacity-75" />

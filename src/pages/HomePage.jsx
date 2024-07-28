@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Banner from '../components/Banner'
 import ProductsHight from '../components/ProductsHight'
 
@@ -55,20 +56,20 @@ const HomePage = () => {
             <div className="flex items-center justify-center select-none font-mono mt-2">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <button className="btn btn-wide bg-green-500 hover:bg-green-400 text-white">
-                        <a href="https://lin.ee/XRRja2d" target="_blank" className="flex flex-row items-center space-x-4">
+                        <Link to="https://lin.ee/XRRja2d" target="_blank" className="flex flex-row items-center space-x-4">
                             <FaLine className="text-2xl" />
                             <div className="flex flex-col">
                                 <span>แชทแล้วช้อป ง่ายนิดเดียว</span>
                                 <span>คลิกเลย</span>
                             </div>
-                        </a>
+                        </Link>
                     </button>
 
                     <button className="btn btn-wide bg-blue-700 hover:bg-blue-500 text-white">
-                        <a href="https://www.facebook.com/profile.php?id=100090972997816&mibextid=LQQJ4d" target="_blank" className="flex flex-row items-center space-x-4">
+                        <Link to="https://www.facebook.com/profile.php?id=100090972997816&mibextid=LQQJ4d" target="_blank" className="flex flex-row items-center space-x-4">
                             <FaFacebook className="text-2xl" />
                             <span>รับโปรโมชั่นพิเศษก่อนใคร</span>
-                        </a>
+                        </Link>
                     </button>
                 </div>
             </div>
