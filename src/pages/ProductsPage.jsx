@@ -89,6 +89,7 @@ const ProductsPage = () => {
 
     const handleSubCategoryChange = (category) => {
         setSelectedSubCategory(category === selectedSubCategory ? null : category)
+        setMobileFiltersOpen(false)
     }
 
     const handleSizeChange = (size) => {
@@ -99,6 +100,7 @@ const ProductsPage = () => {
             newSizes.add(size)
         }
         setSelectedSizes(newSizes)
+        setMobileFiltersOpen(false)
     }
 
     const filteredProducts = products.filter(product => {
@@ -246,7 +248,7 @@ const ProductsPage = () => {
                                         <Link to={product.to} className="group" key={product.id}>
                                             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                                                 <img src={product.imageSrc} alt={product.imageAlt} className="h-full w-full object-cover object-center group-hover:opacity-75" />
-                                                <button className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity">ดูสินค้าเพิ่มเติม</button>
+                                                <button className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity">ดูรายละเอียดเพิ่มเติม</button>
                                             </div>
                                             <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
                                             <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
