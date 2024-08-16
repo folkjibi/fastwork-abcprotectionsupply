@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-
 import IMG1 from '../assets/images/home/A0149467.jpg'
 import IMG2 from '../assets/images/home/A0148264.jpg'
 import IMG3 from '../assets/images/home/A0149476.jpg'
@@ -12,7 +11,6 @@ const products = [
         id: 1,
         name: 'ไฟฉุกเฉิน LED 12V 9W',
         to: "/products",
-        price: '$48',
         imageSrc: IMG1,
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
     },
@@ -20,7 +18,6 @@ const products = [
         id: 2,
         name: 'สเปร์ยดับเพลิง 500 มล.',
         to: "/products",
-        price: '$35',
         imageSrc: IMG2,
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
     },
@@ -28,7 +25,6 @@ const products = [
         id: 3,
         name: 'ถังดับเพลิงแบบเคมีแห้งชนิดเติมได้ 10 ปอนด์',
         to: "/products",
-        price: '$89',
         imageSrc: IMG3,
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
     },
@@ -36,7 +32,6 @@ const products = [
         id: 4,
         name: 'เครื่องดับเพลิง ชนิดเคมีแห้ง Rating 4A5B ขนาด 10 ปอนด์',
         to: "/products",
-        price: '$35',
         imageSrc: IMG4,
         imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
     },
