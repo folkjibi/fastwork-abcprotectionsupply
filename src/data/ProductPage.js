@@ -457,8 +457,8 @@ export const subCategories = [
 
 export const filters = [
     {
-        id: "size",
-        name: "Size",
+        id: "type",
+        name: "ประเภท",
         options: [
             { value: "30cm", label: "30cm", checked: false},
             { value: "50cm", label: "50cm", checked: false},
