@@ -19,9 +19,11 @@ const ProductsPage = () => {
     const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
     const [selectedSubCategory, setSelectedSubCategory] = useState(null)
     const [selectedSizes, setSelectedSizes] = useState(new Set())
+    const [activeCategory, setActiveCategory] = useState(null)
 
     const handleSubCategoryChange = (category) => {
         setSelectedSubCategory(category === selectedSubCategory ? null : category)
+        setActiveCategory(category === selectedSubCategory ? null : category)
         setMobileFiltersOpen(false)
     }
 
@@ -133,7 +135,13 @@ const ProductsPage = () => {
                                 <ul role="list" className="space-y-4 border-b border-gray-200 pb-6 text-sm font-medium text-gray-900">
                                     {subCategories.map((category) => (
                                         <li key={category.name}>
-                                            <button type="button" onClick={() => handleSubCategoryChange(category.name)}>{category.name}</button>
+                                            <button 
+                                                type="button" 
+                                                onClick={() => handleSubCategoryChange(category.name)}
+                                                className={activeCategory === category.name ? 'text-blue-500' : ''}
+                                            >
+                                                {category.name}
+                                            </button>
                                         </li>
                                     ))}
                                 </ul>
